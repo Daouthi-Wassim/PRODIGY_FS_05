@@ -1,0 +1,135 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for all content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 10px;
+    background-color: #1d72b8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #155a8a;
+}
+
+/* Post and comment styling */
+.post, .comment {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Like and comment buttons */
+button.like, button.comment {
+    background-color: #28a745;
+}
+
+button.like:hover, button.comment:hover {
+    background-color: #218838;
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.comment-section form {
+    margin-top: 10px;
+}
+
+.comment {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-left: 4px solid #1d72b8;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .post, .comment {
+        padding: 15px;
+    }
+}
