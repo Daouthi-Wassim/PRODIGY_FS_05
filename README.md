@@ -1,32 +1,36 @@
-# Social Media Application
+This is a PHP-based social media web application with MySQL database integration, designed as a simple but functional social networking platform. Here's what the project includes:
 
-This project is a simple social media application where users can create profiles, share posts, like, and comment on others' posts. The application features an intuitive user interface with image/video uploads, post tagging, and allows users to follow each other, receive notifications for new interactions, and explore trending content.
+🏗️ Architecture & Technology Stack
+Backend: PHP with MySQL database
+Frontend: HTML, CSS with responsive design
+Database: MySQL with 4 main tables (users, posts, likes, comments)
+Server: Designed to run on XAMPP/WAMP local server environment
+📊 Database Structure
+The application uses a well-structured MySQL database (social_media_app.sql) with:
 
-## Features
+Users Table: Stores user accounts with username, email, hashed passwords, and profile pictures
+Posts Table: Contains user posts with content, optional images, and timestamps
+Likes Table: Tracks post likes with user and post relationships
+Comments Table: Stores comments on posts with user attribution
+🔧 Core Features
+User Authentication
+Registration (register.php): New user signup with username, email, and password
+Login (login.php): Secure authentication with password verification and session management
+Social Media Functionality
+Profile Page (profile.php): User dashboard showing personal posts and posting interface
+Post Creation (post.php): Users can create text posts with optional image uploads
+Like System (like.php): Users can like posts
+Comment System (comment.php): Users can comment on posts
+🎨 User Interface
+The application features a clean, modern design (style.css) with:
 
-- User profile creation
-- Posting with text and images/videos
-- Liking and commenting on posts
-- User following and notifications
-- Explore trending content
-
-## Technologies Used
-
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** PHP
-- **Database:** MySQL (or any preferred SQL database)
-- **Web Server:** Apache (using XAMPP, WAMP, or LAMP)
-
-## Installation
-
-### Prerequisites
-
-- **Web Server:** Ensure you have Apache installed. You can use XAMPP, WAMP, or LAMP.
-- **Database:** MySQL (comes with XAMPP, WAMP, or LAMP).
-- **PHP:** Make sure PHP is installed and configured with your web server.
-
-### Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/your-repository-name.git
+Responsive layout that works on mobile and desktop
+Modern color scheme with blue primary colors (#1d72b8)
+Clean forms with rounded corners and hover effects
+Card-based design for posts and comments
+Professional typography using Segoe UI font family
+🔒 Security Features
+Password hashing using PHP's password_hash() function
+Prepared statements to prevent SQL injection
+Session management for user authentication
+Input validation and sanitization
